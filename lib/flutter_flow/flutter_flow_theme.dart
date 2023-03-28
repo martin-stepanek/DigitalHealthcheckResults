@@ -78,51 +78,51 @@ class ThemeTypography extends Typography {
 
   final FlutterFlowTheme theme;
 
-  String get title1Family => 'SF Pro Display';
-  TextStyle get title1 => TextStyle(
-        fontFamily: 'SF Pro Display',
+  String get title1Family => 'Roboto';
+  TextStyle get title1 => GoogleFonts.getFont(
+        'Roboto',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 28.0,
       );
-  String get title2Family => 'SF Pro Display';
-  TextStyle get title2 => TextStyle(
-        fontFamily: 'SF Pro Display',
+  String get title2Family => 'Roboto';
+  TextStyle get title2 => GoogleFonts.getFont(
+        'Roboto',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 24.0,
       );
-  String get title3Family => 'SF Pro Display';
-  TextStyle get title3 => TextStyle(
-        fontFamily: 'SF Pro Display',
+  String get title3Family => 'Roboto';
+  TextStyle get title3 => GoogleFonts.getFont(
+        'Roboto',
         color: theme.primaryText,
         fontWeight: FontWeight.w600,
         fontSize: 20.0,
       );
-  String get subtitle1Family => 'SF Pro Display';
-  TextStyle get subtitle1 => TextStyle(
-        fontFamily: 'SF Pro Display',
+  String get subtitle1Family => 'Roboto';
+  TextStyle get subtitle1 => GoogleFonts.getFont(
+        'Roboto',
         color: theme.primaryText,
         fontWeight: FontWeight.w500,
         fontSize: 20.0,
       );
-  String get subtitle2Family => 'SF Pro Display';
-  TextStyle get subtitle2 => TextStyle(
-        fontFamily: 'SF Pro Display',
+  String get subtitle2Family => 'Roboto';
+  TextStyle get subtitle2 => GoogleFonts.getFont(
+        'Roboto',
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 18.0,
       );
-  String get bodyText1Family => 'SF Pro Display';
-  TextStyle get bodyText1 => TextStyle(
-        fontFamily: 'SF Pro Display',
+  String get bodyText1Family => 'Roboto';
+  TextStyle get bodyText1 => GoogleFonts.getFont(
+        'Roboto',
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 16.0,
       );
-  String get bodyText2Family => 'SF Pro Display';
-  TextStyle get bodyText2 => TextStyle(
-        fontFamily: 'SF Pro Display',
+  String get bodyText2Family => 'Roboto';
+  TextStyle get bodyText2 => GoogleFonts.getFont(
+        'Roboto',
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 12.0,

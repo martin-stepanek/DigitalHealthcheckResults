@@ -13,4 +13,5 @@ class MoreInfoGlucoseModel extends FlutterFlowModel {
   void dispose() {}
 
   /// Additional helper methods are added here.
+
 }

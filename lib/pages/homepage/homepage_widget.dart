@@ -23,6 +23,8 @@ class _HomepageWidgetState extends State<HomepageWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => HomepageModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
@@ -35,6 +37,8 @@ class _HomepageWidgetState extends State<HomepageWidget> {
 
   @override
   Widget build(BuildContext context) {
+    context.watch<FFAppState>();
+
     return Scaffold(
       key: scaffoldKey,
       backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
@@ -44,10 +48,9 @@ class _HomepageWidgetState extends State<HomepageWidget> {
         title: Text(
           'Page Title',
           style: FlutterFlowTheme.of(context).title2.override(
-                fontFamily: 'SF Pro Display',
+                fontFamily: 'Roboto',
                 color: Colors.white,
                 fontSize: 22.0,
-                useGoogleFonts: false,
               ),
         ),
         actions: [],
