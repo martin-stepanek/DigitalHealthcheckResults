@@ -10,6 +10,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+
 import 'start_model.dart';
 export 'start_model.dart';
 
@@ -69,28 +70,27 @@ class _StartWidgetState extends State<StartWidget> {
             decoration: BoxDecoration(
               color: FlutterFlowTheme.of(context).secondaryBackground,
             ),
-            alignment: AlignmentDirectional(0.0, -1.0),
+            alignment: AlignmentDirectional(0, -1),
             child: Container(
               constraints: BoxConstraints(
-                maxWidth: 700.0,
+                maxWidth: 700,
               ),
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).secondaryBackground,
               ),
               child: Stack(
-                alignment: AlignmentDirectional(0.0, 0.0),
+                alignment: AlignmentDirectional(0, 0),
                 children: [
                   Padding(
-                    padding:
-                        EdgeInsetsDirectional.fromSTEB(40.0, 20.0, 40.0, 20.0),
+                    padding: EdgeInsetsDirectional.fromSTEB(40, 20, 40, 20),
                     child: SingleChildScrollView(
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Wrap(
-                            spacing: 0.0,
-                            runSpacing: 20.0,
+                            spacing: 0,
+                            runSpacing: 20,
                             alignment: WrapAlignment.center,
                             crossAxisAlignment: WrapCrossAlignment.start,
                             direction: Axis.horizontal,
@@ -99,13 +99,13 @@ class _StartWidgetState extends State<StartWidget> {
                             clipBehavior: Clip.none,
                             children: [
                               Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: AlignmentDirectional(0, 0),
                                 child: Container(
                                   width:
                                       MediaQuery.of(context).size.width * 0.5,
-                                  height: 50.0,
+                                  height: 50,
                                   constraints: BoxConstraints(
-                                    maxWidth: 200.0,
+                                    maxWidth: 200,
                                   ),
                                   decoration: BoxDecoration(
                                     image: DecorationImage(
@@ -119,15 +119,15 @@ class _StartWidgetState extends State<StartWidget> {
                               ),
                               Container(
                                 constraints: BoxConstraints(
-                                  maxWidth: 300.0,
+                                  maxWidth: 300,
                                 ),
                                 decoration: BoxDecoration(
                                   color: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
                                 ),
                                 child: Wrap(
-                                  spacing: 20.0,
-                                  runSpacing: 20.0,
+                                  spacing: 20,
+                                  runSpacing: 20,
                                   alignment: WrapAlignment.start,
                                   crossAxisAlignment: WrapCrossAlignment.start,
                                   direction: Axis.horizontal,
@@ -149,35 +149,35 @@ class _StartWidgetState extends State<StartWidget> {
                                           borderSide: BorderSide(
                                             color: FlutterFlowTheme.of(context)
                                                 .lineColor,
-                                            width: 1.0,
+                                            width: 1,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(8),
                                         ),
                                         focusedBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
                                             color: FlutterFlowTheme.of(context)
                                                 .primaryColor,
-                                            width: 1.0,
+                                            width: 1,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(8),
                                         ),
                                         errorBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
                                             color: Color(0xFFFF0000),
-                                            width: 1.0,
+                                            width: 1,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(8),
                                         ),
                                         focusedErrorBorder: OutlineInputBorder(
                                           borderSide: BorderSide(
                                             color: Color(0xFFFF0000),
-                                            width: 1.0,
+                                            width: 1,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(8),
                                         ),
                                         filled: true,
                                         fillColor: FlutterFlowTheme.of(context)
@@ -202,12 +202,12 @@ class _StartWidgetState extends State<StartWidget> {
                                       text: 'Show results',
                                       options: FFButtonOptions(
                                         width: double.infinity,
-                                        height: 40.0,
+                                        height: 40,
                                         padding: EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 0.0, 0.0),
+                                            0, 0, 0, 0),
                                         iconPadding:
                                             EdgeInsetsDirectional.fromSTEB(
-                                                0.0, 0.0, 0.0, 0.0),
+                                                0, 0, 0, 0),
                                         color: FlutterFlowTheme.of(context)
                                             .primaryColor,
                                         textStyle: FlutterFlowTheme.of(context)
@@ -219,13 +219,12 @@ class _StartWidgetState extends State<StartWidget> {
                                                       .white,
                                               fontWeight: FontWeight.normal,
                                             ),
-                                        elevation: 0.0,
+                                        elevation: 0,
                                         borderSide: BorderSide(
                                           color: Colors.transparent,
-                                          width: 0.0,
+                                          width: 0,
                                         ),
-                                        borderRadius:
-                                            BorderRadius.circular(32.0),
+                                        borderRadius: BorderRadius.circular(32),
                                         disabledColor: Color(0x66F41B60),
                                         disabledTextColor:
                                             FlutterFlowTheme.of(context).white,
@@ -237,13 +236,13 @@ class _StartWidgetState extends State<StartWidget> {
                             ],
                           ),
                           Divider(
-                            height: 70.0,
-                            thickness: 1.0,
+                            height: 70,
+                            thickness: 1,
                             color: FlutterFlowTheme.of(context).lineColor,
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 30.0),
+                            padding:
+                                EdgeInsetsDirectional.fromSTEB(0, 0, 0, 30),
                             child: InkWell(
                               onTap: () async {
                                 await launchURL(
@@ -274,8 +273,8 @@ class _StartWidgetState extends State<StartWidget> {
                               if (!snapshot.hasData) {
                                 return Center(
                                   child: SizedBox(
-                                    width: 50.0,
-                                    height: 50.0,
+                                    width: 50,
+                                    height: 50,
                                     child: CircularProgressIndicator(
                                       color: FlutterFlowTheme.of(context)
                                           .primaryColor,
@@ -294,8 +293,8 @@ class _StartWidgetState extends State<StartWidget> {
                                       ? wrapResultsUKRecordList.first
                                       : null;
                               return Wrap(
-                                spacing: 10.0,
-                                runSpacing: 10.0,
+                                spacing: 10,
+                                runSpacing: 10,
                                 alignment: WrapAlignment.start,
                                 crossAxisAlignment: WrapCrossAlignment.start,
                                 direction: Axis.horizontal,
@@ -311,32 +310,31 @@ class _StartWidgetState extends State<StartWidget> {
                                     },
                                     child: Material(
                                       color: Colors.transparent,
-                                      elevation: 1.0,
+                                      elevation: 1,
                                       shape: RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(8.0),
+                                        borderRadius: BorderRadius.circular(8),
                                       ),
                                       child: Container(
                                         width: double.infinity,
                                         constraints: BoxConstraints(
-                                          maxWidth: 300.0,
+                                          maxWidth: 300,
                                         ),
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
                                               .primaryBackground,
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(8),
                                         ),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 10.0, 0.0),
+                                                  0, 0, 10, 0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Container(
-                                                width: 10.0,
-                                                height: 140.0,
+                                                width: 10,
+                                                height: 140,
                                                 decoration: BoxDecoration(
                                                   color: () {
                                                     if ((wrapResultsUKRecord!
@@ -352,10 +350,19 @@ class _StartWidgetState extends State<StartWidget> {
                                                             (wrapResultsUKRecord!
                                                                     .bmi! >=
                                                                 25.0)) ||
-                                                        (wrapResultsUKRecord!
-                                                                .bmi! <
-                                                            18.0)) {
+                                                        ((wrapResultsUKRecord!
+                                                                    .bmi! <
+                                                                18.0) &&
+                                                            (wrapResultsUKRecord!
+                                                                    .bmi !=
+                                                                0.0))) {
                                                       return Color(0xFFFFBF00);
+                                                    } else if (wrapResultsUKRecord!
+                                                            .bmi ==
+                                                        0.0) {
+                                                      return FlutterFlowTheme
+                                                              .of(context)
+                                                          .lineColor;
                                                     } else {
                                                       return Color(0xFFD2222D);
                                                     }
@@ -363,32 +370,29 @@ class _StartWidgetState extends State<StartWidget> {
                                                   borderRadius:
                                                       BorderRadius.only(
                                                     bottomLeft:
-                                                        Radius.circular(8.0),
+                                                        Radius.circular(8),
                                                     bottomRight:
-                                                        Radius.circular(0.0),
-                                                    topLeft:
-                                                        Radius.circular(8.0),
+                                                        Radius.circular(0),
+                                                    topLeft: Radius.circular(8),
                                                     topRight:
-                                                        Radius.circular(0.0),
+                                                        Radius.circular(0),
                                                   ),
                                                 ),
                                               ),
                                               Padding(
                                                 padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        10.0, 10.0, 20.0, 10.0),
+                                                    .fromSTEB(10, 10, 20, 10),
                                                 child: Image.asset(
                                                   'assets/images/BMI.png',
-                                                  width: 80.0,
-                                                  height: 80.0,
+                                                  width: 80,
+                                                  height: 80,
                                                   fit: BoxFit.contain,
                                                 ),
                                               ),
                                               Expanded(
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 10.0, 0.0, 10.0),
+                                                      .fromSTEB(0, 10, 0, 10),
                                                   child: Column(
                                                     mainAxisSize:
                                                         MainAxisSize.max,
@@ -400,36 +404,39 @@ class _StartWidgetState extends State<StartWidget> {
                                                     children: [
                                                       Text(
                                                         'Body Mass Index (BMI)',
-                                                        style: FlutterFlowTheme
-                                                                .of(context)
-                                                            .bodyText1
-                                                            .override(
-                                                              fontFamily:
-                                                                  'Roboto',
-                                                              fontSize: 18.0,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .w600,
-                                                            ),
+                                                        style:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyText1
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Roboto',
+                                                                  fontSize: 18,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w600,
+                                                                ),
                                                       ),
                                                       Padding(
                                                         padding:
                                                             EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    0.0,
-                                                                    10.0,
-                                                                    0.0,
-                                                                    0.0),
+                                                                .fromSTEB(0, 10,
+                                                                    0, 0),
                                                         child: Text(
-                                                          '${formatNumber(
-                                                            wrapResultsUKRecord!
-                                                                .bmi,
-                                                            formatType:
-                                                                FormatType
-                                                                    .custom,
-                                                            format: '###.#',
-                                                            locale: '',
-                                                          )}',
+                                                          wrapResultsUKRecord!
+                                                                      .bmi ==
+                                                                  0.0
+                                                              ? 'No data available'
+                                                              : '${formatNumber(
+                                                                  wrapResultsUKRecord!
+                                                                      .bmi,
+                                                                  formatType:
+                                                                      FormatType
+                                                                          .custom,
+                                                                  format:
+                                                                      '###.#',
+                                                                  locale: '',
+                                                                )}',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyText1,
@@ -438,11 +445,8 @@ class _StartWidgetState extends State<StartWidget> {
                                                       Padding(
                                                         padding:
                                                             EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    0.0,
-                                                                    10.0,
-                                                                    0.0,
-                                                                    0.0),
+                                                                .fromSTEB(0, 10,
+                                                                    0, 0),
                                                         child: Text(
                                                           'Learn more',
                                                           style: FlutterFlowTheme
@@ -454,7 +458,7 @@ class _StartWidgetState extends State<StartWidget> {
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .primaryColor,
-                                                                fontSize: 14.0,
+                                                                fontSize: 14,
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w500,
@@ -476,61 +480,57 @@ class _StartWidgetState extends State<StartWidget> {
                                   ),
                                   Material(
                                     color: Colors.transparent,
-                                    elevation: 1.0,
+                                    elevation: 1,
                                     shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(8),
                                     ),
                                     child: Container(
                                       width: double.infinity,
                                       constraints: BoxConstraints(
-                                        maxWidth: 300.0,
+                                        maxWidth: 300,
                                       ),
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .primaryBackground,
-                                        borderRadius:
-                                            BorderRadius.circular(8.0),
+                                        borderRadius: BorderRadius.circular(8),
                                       ),
                                       child: Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 10.0, 0.0),
+                                            0, 0, 10, 0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Container(
-                                              width: 10.0,
-                                              height: 140.0,
+                                              width: 10,
+                                              height: 140,
                                               decoration: BoxDecoration(
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .lineColor,
                                                 borderRadius: BorderRadius.only(
                                                   bottomLeft:
-                                                      Radius.circular(8.0),
+                                                      Radius.circular(8),
                                                   bottomRight:
-                                                      Radius.circular(0.0),
-                                                  topLeft: Radius.circular(8.0),
-                                                  topRight:
-                                                      Radius.circular(0.0),
+                                                      Radius.circular(0),
+                                                  topLeft: Radius.circular(8),
+                                                  topRight: Radius.circular(0),
                                                 ),
                                               ),
                                             ),
                                             Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      10.0, 10.0, 20.0, 10.0),
+                                                  .fromSTEB(10, 10, 20, 10),
                                               child: Image.asset(
                                                 'assets/images/BMI.png',
-                                                width: 80.0,
-                                                height: 80.0,
+                                                width: 80,
+                                                height: 80,
                                                 fit: BoxFit.contain,
                                               ),
                                             ),
                                             Expanded(
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        0.0, 10.0, 0.0, 10.0),
+                                                    .fromSTEB(0, 10, 0, 10),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -547,7 +547,7 @@ class _StartWidgetState extends State<StartWidget> {
                                                           .override(
                                                             fontFamily:
                                                                 'Roboto',
-                                                            fontSize: 18.0,
+                                                            fontSize: 18,
                                                             fontWeight:
                                                                 FontWeight.w600,
                                                           ),
@@ -556,19 +556,21 @@ class _StartWidgetState extends State<StartWidget> {
                                                       padding:
                                                           EdgeInsetsDirectional
                                                               .fromSTEB(
-                                                                  0.0,
-                                                                  10.0,
-                                                                  0.0,
-                                                                  0.0),
+                                                                  0, 10, 0, 0),
                                                       child: Text(
-                                                        '${formatNumber(
-                                                          wrapResultsUKRecord!
-                                                              .waist,
-                                                          formatType:
-                                                              FormatType.custom,
-                                                          format: '###.#',
-                                                          locale: '',
-                                                        )} cm',
+                                                        wrapResultsUKRecord!
+                                                                    .waist ==
+                                                                0.0
+                                                            ? 'No data available'
+                                                            : '${formatNumber(
+                                                                wrapResultsUKRecord!
+                                                                    .waist,
+                                                                formatType:
+                                                                    FormatType
+                                                                        .custom,
+                                                                format: '###.#',
+                                                                locale: '',
+                                                              )} cm',
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -586,61 +588,57 @@ class _StartWidgetState extends State<StartWidget> {
                                   ),
                                   Material(
                                     color: Colors.transparent,
-                                    elevation: 1.0,
+                                    elevation: 1,
                                     shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(8),
                                     ),
                                     child: Container(
                                       width: double.infinity,
                                       constraints: BoxConstraints(
-                                        maxWidth: 300.0,
+                                        maxWidth: 300,
                                       ),
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .primaryBackground,
-                                        borderRadius:
-                                            BorderRadius.circular(8.0),
+                                        borderRadius: BorderRadius.circular(8),
                                       ),
                                       child: Padding(
                                         padding: EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 0.0, 10.0, 0.0),
+                                            0, 0, 10, 0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Container(
-                                              width: 10.0,
-                                              height: 140.0,
+                                              width: 10,
+                                              height: 140,
                                               decoration: BoxDecoration(
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .lineColor,
                                                 borderRadius: BorderRadius.only(
                                                   bottomLeft:
-                                                      Radius.circular(8.0),
+                                                      Radius.circular(8),
                                                   bottomRight:
-                                                      Radius.circular(0.0),
-                                                  topLeft: Radius.circular(8.0),
-                                                  topRight:
-                                                      Radius.circular(0.0),
+                                                      Radius.circular(0),
+                                                  topLeft: Radius.circular(8),
+                                                  topRight: Radius.circular(0),
                                                 ),
                                               ),
                                             ),
                                             Padding(
                                               padding: EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      10.0, 10.0, 20.0, 10.0),
+                                                  .fromSTEB(10, 10, 20, 10),
                                               child: Image.asset(
                                                 'assets/images/BMI.png',
-                                                width: 80.0,
-                                                height: 80.0,
+                                                width: 80,
+                                                height: 80,
                                                 fit: BoxFit.contain,
                                               ),
                                             ),
                                             Expanded(
                                               child: Padding(
                                                 padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        0.0, 10.0, 0.0, 10.0),
+                                                    .fromSTEB(0, 10, 0, 10),
                                                 child: Column(
                                                   mainAxisSize:
                                                       MainAxisSize.max,
@@ -658,7 +656,7 @@ class _StartWidgetState extends State<StartWidget> {
                                                           .override(
                                                             fontFamily:
                                                                 'Roboto',
-                                                            fontSize: 18.0,
+                                                            fontSize: 18,
                                                             fontWeight:
                                                                 FontWeight.w600,
                                                           ),
@@ -667,19 +665,21 @@ class _StartWidgetState extends State<StartWidget> {
                                                       padding:
                                                           EdgeInsetsDirectional
                                                               .fromSTEB(
-                                                                  0.0,
-                                                                  10.0,
-                                                                  0.0,
-                                                                  0.0),
+                                                                  0, 10, 0, 0),
                                                       child: Text(
-                                                        '${formatNumber(
-                                                          wrapResultsUKRecord!
-                                                              .bodyFat,
-                                                          formatType:
-                                                              FormatType.custom,
-                                                          format: '###.#',
-                                                          locale: '',
-                                                        )}%',
+                                                        wrapResultsUKRecord!
+                                                                    .bodyFat ==
+                                                                0.0
+                                                            ? 'No data available'
+                                                            : '${formatNumber(
+                                                                wrapResultsUKRecord!
+                                                                    .bodyFat,
+                                                                formatType:
+                                                                    FormatType
+                                                                        .custom,
+                                                                format: '###.#',
+                                                                locale: '',
+                                                              )}%',
                                                         style:
                                                             FlutterFlowTheme.of(
                                                                     context)
@@ -703,40 +703,45 @@ class _StartWidgetState extends State<StartWidget> {
                                     },
                                     child: Material(
                                       color: Colors.transparent,
-                                      elevation: 1.0,
+                                      elevation: 1,
                                       shape: RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(8.0),
+                                        borderRadius: BorderRadius.circular(8),
                                       ),
                                       child: Container(
                                         width: double.infinity,
                                         constraints: BoxConstraints(
-                                          maxWidth: 300.0,
+                                          maxWidth: 300,
                                         ),
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
                                               .primaryBackground,
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(8),
                                         ),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 10.0, 0.0),
+                                                  0, 0, 10, 0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Container(
-                                                width: 10.0,
-                                                height: 140.0,
+                                                width: 10,
+                                                height: 140,
                                                 decoration: BoxDecoration(
                                                   color: () {
-                                                    if ((wrapResultsUKRecord!
-                                                                .bpSys! <=
-                                                            120) &&
-                                                        (wrapResultsUKRecord!
-                                                                .bpDia! <=
-                                                            80)) {
+                                                    if (((wrapResultsUKRecord!
+                                                                    .bpSys! <=
+                                                                120) &&
+                                                            (wrapResultsUKRecord!
+                                                                    .bpSys !=
+                                                                0)) &&
+                                                        ((wrapResultsUKRecord!
+                                                                    .bpDia! <=
+                                                                80) &&
+                                                            (wrapResultsUKRecord!
+                                                                    .bpDia !=
+                                                                0))) {
                                                       return Color(0xFF238823);
                                                     } else if ((wrapResultsUKRecord!
                                                                 .bpSys! >=
@@ -745,6 +750,12 @@ class _StartWidgetState extends State<StartWidget> {
                                                                 .bpDia! >=
                                                             90)) {
                                                       return Color(0xFFD2222D);
+                                                    } else if (wrapResultsUKRecord!
+                                                            .bpSys ==
+                                                        0) {
+                                                      return FlutterFlowTheme
+                                                              .of(context)
+                                                          .lineColor;
                                                     } else {
                                                       return Color(0xFFFFBF00);
                                                     }
@@ -752,32 +763,29 @@ class _StartWidgetState extends State<StartWidget> {
                                                   borderRadius:
                                                       BorderRadius.only(
                                                     bottomLeft:
-                                                        Radius.circular(8.0),
+                                                        Radius.circular(8),
                                                     bottomRight:
-                                                        Radius.circular(0.0),
-                                                    topLeft:
-                                                        Radius.circular(8.0),
+                                                        Radius.circular(0),
+                                                    topLeft: Radius.circular(8),
                                                     topRight:
-                                                        Radius.circular(0.0),
+                                                        Radius.circular(0),
                                                   ),
                                                 ),
                                               ),
                                               Padding(
                                                 padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        10.0, 10.0, 20.0, 10.0),
+                                                    .fromSTEB(10, 10, 20, 10),
                                                 child: Image.asset(
                                                   'assets/images/Blood_pressure.png',
-                                                  width: 80.0,
-                                                  height: 80.0,
+                                                  width: 80,
+                                                  height: 80,
                                                   fit: BoxFit.contain,
                                                 ),
                                               ),
                                               Expanded(
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 10.0, 0.0, 10.0),
+                                                      .fromSTEB(0, 10, 0, 10),
                                                   child: Column(
                                                     mainAxisSize:
                                                         MainAxisSize.max,
@@ -790,28 +798,30 @@ class _StartWidgetState extends State<StartWidget> {
                                                     children: [
                                                       Text(
                                                         'Blood pressure',
-                                                        style: FlutterFlowTheme
-                                                                .of(context)
-                                                            .bodyText1
-                                                            .override(
-                                                              fontFamily:
-                                                                  'Roboto',
-                                                              fontSize: 18.0,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .w600,
-                                                            ),
+                                                        style:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyText1
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Roboto',
+                                                                  fontSize: 18,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w600,
+                                                                ),
                                                       ),
                                                       Padding(
                                                         padding:
                                                             EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    0.0,
-                                                                    10.0,
-                                                                    0.0,
-                                                                    0.0),
+                                                                .fromSTEB(0, 10,
+                                                                    0, 0),
                                                         child: Text(
-                                                          '${wrapResultsUKRecord!.bpSys?.toString()}/${wrapResultsUKRecord!.bpDia?.toString()} mmHg',
+                                                          wrapResultsUKRecord!
+                                                                      .bpSys ==
+                                                                  0
+                                                              ? 'No data available'
+                                                              : '${wrapResultsUKRecord!.bpSys?.toString()}/${wrapResultsUKRecord!.bpDia?.toString()} mmHg',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyText1,
@@ -820,11 +830,8 @@ class _StartWidgetState extends State<StartWidget> {
                                                       Padding(
                                                         padding:
                                                             EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    0.0,
-                                                                    10.0,
-                                                                    0.0,
-                                                                    0.0),
+                                                                .fromSTEB(0, 10,
+                                                                    0, 0),
                                                         child: Text(
                                                           'Learn more',
                                                           style: FlutterFlowTheme
@@ -836,7 +843,7 @@ class _StartWidgetState extends State<StartWidget> {
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .primaryColor,
-                                                                fontSize: 14.0,
+                                                                fontSize: 14,
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w500,
@@ -864,37 +871,39 @@ class _StartWidgetState extends State<StartWidget> {
                                     },
                                     child: Material(
                                       color: Colors.transparent,
-                                      elevation: 1.0,
+                                      elevation: 1,
                                       shape: RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(8.0),
+                                        borderRadius: BorderRadius.circular(8),
                                       ),
                                       child: Container(
                                         width: double.infinity,
                                         constraints: BoxConstraints(
-                                          maxWidth: 300.0,
+                                          maxWidth: 300,
                                         ),
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
                                               .primaryBackground,
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(8),
                                         ),
                                         child: Padding(
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
-                                                  0.0, 0.0, 10.0, 0.0),
+                                                  0, 0, 10, 0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             children: [
                                               Container(
-                                                width: 10.0,
-                                                height: 140.0,
+                                                width: 10,
+                                                height: 140,
                                                 decoration: BoxDecoration(
                                                   color: () {
-                                                    if (wrapResultsUKRecord!
-                                                            .hba1c! <
-                                                        5.7) {
+                                                    if ((wrapResultsUKRecord!
+                                                                .hba1c! <
+                                                            5.7) &&
+                                                        (wrapResultsUKRecord!
+                                                                .hba1c !=
+                                                            0.0)) {
                                                       return Color(0xFF238823);
                                                     } else if ((wrapResultsUKRecord!
                                                                 .hba1c! >=
@@ -903,6 +912,12 @@ class _StartWidgetState extends State<StartWidget> {
                                                                 .hba1c! <
                                                             6.5)) {
                                                       return Color(0xFFFFBF00);
+                                                    } else if (wrapResultsUKRecord!
+                                                            .hba1c ==
+                                                        0.0) {
+                                                      return FlutterFlowTheme
+                                                              .of(context)
+                                                          .lineColor;
                                                     } else {
                                                       return Color(0xFFD2222D);
                                                     }
@@ -910,32 +925,29 @@ class _StartWidgetState extends State<StartWidget> {
                                                   borderRadius:
                                                       BorderRadius.only(
                                                     bottomLeft:
-                                                        Radius.circular(8.0),
+                                                        Radius.circular(8),
                                                     bottomRight:
-                                                        Radius.circular(0.0),
-                                                    topLeft:
-                                                        Radius.circular(8.0),
+                                                        Radius.circular(0),
+                                                    topLeft: Radius.circular(8),
                                                     topRight:
-                                                        Radius.circular(0.0),
+                                                        Radius.circular(0),
                                                   ),
                                                 ),
                                               ),
                                               Padding(
                                                 padding: EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        10.0, 10.0, 20.0, 10.0),
+                                                    .fromSTEB(10, 10, 20, 10),
                                                 child: Image.asset(
                                                   'assets/images/Blood_glucose.png',
-                                                  width: 80.0,
-                                                  height: 80.0,
+                                                  width: 80,
+                                                  height: 80,
                                                   fit: BoxFit.contain,
                                                 ),
                                               ),
                                               Expanded(
                                                 child: Padding(
                                                   padding: EdgeInsetsDirectional
-                                                      .fromSTEB(
-                                                          0.0, 10.0, 0.0, 10.0),
+                                                      .fromSTEB(0, 10, 0, 10),
                                                   child: Column(
                                                     mainAxisSize:
                                                         MainAxisSize.max,
@@ -948,36 +960,39 @@ class _StartWidgetState extends State<StartWidget> {
                                                     children: [
                                                       Text(
                                                         'Blood sugar (HbA1c)',
-                                                        style: FlutterFlowTheme
-                                                                .of(context)
-                                                            .bodyText1
-                                                            .override(
-                                                              fontFamily:
-                                                                  'Roboto',
-                                                              fontSize: 18.0,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .w600,
-                                                            ),
+                                                        style:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyText1
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Roboto',
+                                                                  fontSize: 18,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .w600,
+                                                                ),
                                                       ),
                                                       Padding(
                                                         padding:
                                                             EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    0.0,
-                                                                    10.0,
-                                                                    0.0,
-                                                                    0.0),
+                                                                .fromSTEB(0, 10,
+                                                                    0, 0),
                                                         child: Text(
-                                                          '${formatNumber(
-                                                            wrapResultsUKRecord!
-                                                                .hba1c,
-                                                            formatType:
-                                                                FormatType
-                                                                    .custom,
-                                                            format: '###.#',
-                                                            locale: '',
-                                                          )}%',
+                                                          wrapResultsUKRecord!
+                                                                      .hba1c ==
+                                                                  0.0
+                                                              ? 'No data available'
+                                                              : '${formatNumber(
+                                                                  wrapResultsUKRecord!
+                                                                      .hba1c,
+                                                                  formatType:
+                                                                      FormatType
+                                                                          .custom,
+                                                                  format:
+                                                                      '###.#',
+                                                                  locale: '',
+                                                                )}%',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .bodyText1,
@@ -986,11 +1001,8 @@ class _StartWidgetState extends State<StartWidget> {
                                                       Padding(
                                                         padding:
                                                             EdgeInsetsDirectional
-                                                                .fromSTEB(
-                                                                    0.0,
-                                                                    10.0,
-                                                                    0.0,
-                                                                    0.0),
+                                                                .fromSTEB(0, 10,
+                                                                    0, 0),
                                                         child: Text(
                                                           'Learn more',
                                                           style: FlutterFlowTheme
@@ -1002,7 +1014,7 @@ class _StartWidgetState extends State<StartWidget> {
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .primaryColor,
-                                                                fontSize: 14.0,
+                                                                fontSize: 14,
                                                                 fontWeight:
                                                                     FontWeight
                                                                         .w500,
@@ -1032,7 +1044,7 @@ class _StartWidgetState extends State<StartWidget> {
                           ))
                             Container(
                               width: double.infinity,
-                              height: 100.0,
+                              height: 100,
                               decoration: BoxDecoration(
                                 color: FlutterFlowTheme.of(context)
                                     .secondaryBackground,
@@ -1049,7 +1061,7 @@ class _StartWidgetState extends State<StartWidget> {
                       decoration: BoxDecoration(
                         color: Color(0xB2F5F7FA),
                       ),
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: AlignmentDirectional(0, 0),
                       child: wrapWithModel(
                         model: _model.moreInfoBMIModel,
                         updateCallback: () => setState(() {}),
@@ -1063,7 +1075,7 @@ class _StartWidgetState extends State<StartWidget> {
                       decoration: BoxDecoration(
                         color: Color(0xB2F5F7FA),
                       ),
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: AlignmentDirectional(0, 0),
                       child: wrapWithModel(
                         model: _model.moreInfoBPModel,
                         updateCallback: () => setState(() {}),
@@ -1077,7 +1089,7 @@ class _StartWidgetState extends State<StartWidget> {
                       decoration: BoxDecoration(
                         color: Color(0xB2F5F7FA),
                       ),
-                      alignment: AlignmentDirectional(0.0, 0.0),
+                      alignment: AlignmentDirectional(0, 0),
                       child: wrapWithModel(
                         model: _model.moreInfoGlucoseModel,
                         updateCallback: () => setState(() {}),
