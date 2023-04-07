@@ -243,22 +243,43 @@ class _StartWidgetState extends State<StartWidget> {
                           Padding(
                             padding:
                                 EdgeInsetsDirectional.fromSTEB(0, 0, 0, 30),
-                            child: InkWell(
-                              onTap: () async {
-                                await launchURL(
-                                    'https://firebasestorage.googleapis.com/v0/b/digital-healthcheck-results.appspot.com/o/Post%20Healthcheck%20Info.pdf?alt=media&token=5e17b1cf-e156-49c4-8b0c-99010bf2024c');
-                              },
-                              child: Text(
-                                'Download the Healthcheck advice guide.',
-                                style: FlutterFlowTheme.of(context)
-                                    .bodyText1
-                                    .override(
-                                      fontFamily: 'Roboto',
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryColor,
-                                      decoration: TextDecoration.underline,
-                                    ),
-                              ),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                InkWell(
+                                  onTap: () async {
+                                    await launchURL(
+                                        'https://vitalitycloud.sharepoint.com/:b:/t/ResearchInstitute/ERM6oXqjy8RFq1enF-jKHSMBiwm77AkrVa3_CyqznHZGPg?e=478MTa');
+                                  },
+                                  child: Text(
+                                    'Download the Healthcheck advice guide.',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Roboto',
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryColor,
+                                          decoration: TextDecoration.underline,
+                                        ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0, 10, 0, 0),
+                                  child: Text(
+                                    'Waist circumference and body fat are not colour-coded as Vitality does not have an internal guideline on in- and out-of-range results.',
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyText1
+                                        .override(
+                                          fontFamily: 'Roboto',
+                                          color: FlutterFlowTheme.of(context)
+                                              .secondaryText,
+                                          fontSize: 14,
+                                          fontWeight: FontWeight.normal,
+                                        ),
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
                           StreamBuilder<List<ResultsUKRecord>>(
